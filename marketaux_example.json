@@ -1,0 +1,735 @@
+{
+    "meta": {
+      "found": 127,
+      "returned": 3,
+      "limit": 3,
+      "page": 1
+    },
+    "data": [
+      {
+        "uuid": "00730329-d07a-4080-8430-d0b3f7050458",
+        "title": "China announces aggressive stimulus to boost economy",
+        "description": "China unveils bold new stimulus measures aimed at accelerating economic growth and strengthening financial stability.",
+        "keywords": "",
+        "snippet": "China’s central bank has announced its most aggressive economic stimulus measures since the COVID-19 pandemic began. The People’s Bank of China (PBOC) is ta...",
+        "url": "https://www.killerstartups.com/china-announces-aggressive-stimulus-to-boost-economy/",
+        "image_url": "https://images.killerstartups.com/wp-content/uploads/2024/10/Aggressive-Stimulus.jpg",
+        "language": "en",
+        "published_at": "2024-10-04T22:46:00.000000Z",
+        "source": "killerstartups.com",
+        "relevance_score": null,
+        "entities": [
+          {
+            "symbol": "AAPL.MX",
+            "name": "Apple Inc.",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "mx",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 14.088081,
+            "sentiment_score": 0.34,
+            "highlights": [
+              {
+                "highlight": "He recommended <em>Apple</em> <em>Inc</e[+305 characters]",
+                "sentiment": 0.34,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "BABAN.MX",
+            "name": "Alibaba Group Holding Limited",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "mx",
+            "type": "equity",
+            "industry": "Consumer Cyclical",
+            "match_score": 33.39474,
+            "sentiment_score": 0.3612,
+            "highlights": [
+              {
+                "highlight": "., and <em>Alibaba</em> <em>Group</em> <[+273 characters]",
+                "sentiment": 0.3612,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "AAPL",
+            "name": "Apple Inc.",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "us",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 14.088004,
+            "sentiment_score": 0.34,
+            "highlights": [
+              {
+                "highlight": "He recommended <em>Apple</em> <em>Inc</e[+305 characters]",
+                "sentiment": 0.34,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "BABA",
+            "name": "Alibaba Group Holding Limited",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "us",
+            "type": "equity",
+            "industry": "Consumer Cyclical",
+            "match_score": 33.394547,
+            "sentiment_score": 0.3612,
+            "highlights": [
+              {
+                "highlight": "., and <em>Alibaba</em> <em>Group</em> <[+273 characters]",
+                "sentiment": 0.3612,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "BABAF",
+            "name": "Alibaba Group Holding Limited",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "us",
+            "type": "equity",
+            "industry": "Consumer Cyclical",
+            "match_score": 33.39476,
+            "sentiment_score": 0.3612,
+            "highlights": [
+              {
+                "highlight": "., and <em>Alibaba</em> <em>Group</em> <[+273 characters]",
+                "sentiment": 0.3612,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "9988.HK",
+            "name": "Alibaba Group Holding Limited",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "hk",
+            "type": "equity",
+            "industry": "Consumer Cyclical",
+            "match_score": 33.39476,
+            "sentiment_score": 0.3612,
+            "highlights": [
+              {
+                "highlight": "., and <em>Alibaba</em> <em>Group</em> <[+273 characters]",
+                "sentiment": 0.3612,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "AAPL.BA",
+            "name": "Apple Inc.",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "ar",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 14.088228,
+            "sentiment_score": 0.34,
+            "highlights": [
+              {
+                "highlight": "He recommended <em>Apple</em> <em>Inc</e[+305 characters]",
+                "sentiment": 0.34,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "BABA.BA",
+            "name": "Alibaba Group Holding Limited",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "ar",
+            "type": "equity",
+            "industry": "Consumer Cyclical",
+            "match_score": 33.395123,
+            "sentiment_score": 0.3612,
+            "highlights": [
+              {
+                "highlight": "., and <em>Alibaba</em> <em>Group</em> <[+273 characters]",
+                "sentiment": 0.3612,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "AAPLD.BA",
+            "name": "APPLE INC",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "ar",
+            "type": "equity",
+            "industry": "N/A",
+            "match_score": 14.088184,
+            "sentiment_score": 0.34,
+            "highlights": [
+              {
+                "highlight": "He recommended <em>Apple</em> <em>Inc</e[+305 characters]",
+                "sentiment": 0.34,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "AAPLC.BA",
+            "name": "APPLE INC",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "ar",
+            "type": "equity",
+            "industry": "N/A",
+            "match_score": 14.088184,
+            "sentiment_score": 0.34,
+            "highlights": [
+              {
+                "highlight": "He recommended <em>Apple</em> <em>Inc</e[+305 characters]",
+                "sentiment": 0.34,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "SBUXD.BA",
+            "name": "STARBUCKS CORP",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "ar",
+            "type": "equity",
+            "industry": "N/A",
+            "match_score": 22.896637,
+            "sentiment_score": 0.01255,
+            "highlights": [
+              {
+                "highlight": "., <em>Starbucks</em> <em>Corp</em>., an[+272 characters]",
+                "sentiment": 0.1531,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "Coffee chain retailer <em>Starbucks</em>[+252 characters]",
+                "sentiment": -0.128,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "AAPLCL.SN",
+            "name": "APPLE INC",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "cl",
+            "type": "equity",
+            "industry": "N/A",
+            "match_score": 14.088001,
+            "sentiment_score": 0.34,
+            "highlights": [
+              {
+                "highlight": "He recommended <em>Apple</em> <em>Inc</e[+305 characters]",
+                "sentiment": 0.34,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "AAPL.SN",
+            "name": "Apple Inc.",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "cl",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 14.088001,
+            "sentiment_score": 0.34,
+            "highlights": [
+              {
+                "highlight": "He recommended <em>Apple</em> <em>Inc</e[+305 characters]",
+                "sentiment": 0.34,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "SBUXCL.SN",
+            "name": "STARBUCKS CORP",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "cl",
+            "type": "equity",
+            "industry": "N/A",
+            "match_score": 22.89637,
+            "sentiment_score": 0.01255,
+            "highlights": [
+              {
+                "highlight": "., <em>Starbucks</em> <em>Corp</em>., an[+272 characters]",
+                "sentiment": 0.1531,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "Coffee chain retailer <em>Starbucks</em>[+252 characters]",
+                "sentiment": -0.128,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "AAPL.NE",
+            "name": "Apple Inc.",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "ca",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 14.087993,
+            "sentiment_score": 0.34,
+            "highlights": [
+              {
+                "highlight": "He recommended <em>Apple</em> <em>Inc</e[+305 characters]",
+                "sentiment": 0.34,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "AHLA.DE",
+            "name": "Alibaba Group Holding Limited",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "de",
+            "type": "equity",
+            "industry": "Consumer Cyclical",
+            "match_score": 33.39473,
+            "sentiment_score": 0.3612,
+            "highlights": [
+              {
+                "highlight": "., and <em>Alibaba</em> <em>Group</em> <[+273 characters]",
+                "sentiment": 0.3612,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "APC.DE",
+            "name": "Apple Inc.",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "de",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 14.088079,
+            "sentiment_score": 0.34,
+            "highlights": [
+              {
+                "highlight": "He recommended <em>Apple</em> <em>Inc</e[+305 characters]",
+                "sentiment": 0.34,
+                "highlighted_in": "main_text"
+              }
+            ]
+          }
+        ],
+        "similar": []
+      },
+      {
+        "uuid": "3fc71e9d-1eea-40b8-a8b5-456bd75a4288",
+        "title": "3 Reasons to Buy Nvidia Stock Before October 7",
+        "description": "October 7 kicks off Nvidia's AI Summit, a big event for the whole industry.",
+        "keywords": "",
+        "snippet": "It's no secret that Artificial Intelligence (AI) stocks have dominated the market for the last few years. With firms like PwC -- one of the \"big four\" accountin...",
+        "url": "https://finance.yahoo.com/news/3-reasons-buy-nvidia-stock-211300438.html",
+        "image_url": "https://s.yimg.com/ny/api/res/1.2/PFH3c6IjM4S3kqpy5MBYAg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://media.zenfs.com/en/motleyfool.com/ce2622fd98d2866aee009564a4c41897",
+        "language": "en",
+        "published_at": "2024-10-04T21:13:00.000000Z",
+        "source": "finance.yahoo.com",
+        "relevance_score": null,
+        "entities": [
+          {
+            "symbol": "AAPL",
+            "name": "Apple Inc.",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "us",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 7.344879,
+            "sentiment_score": 0.14255,
+            "highlights": [
+              {
+                "highlight": "It's just about where <em>Apple</em> and[+288 characters]",
+                "sentiment": 0.91,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "The Motley Fool has positions in and rec[+200 characters]",
+                "sentiment": -0.6249,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "AMD",
+            "name": "Advanced Micro Devices, Inc.",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "us",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 12.323887,
+            "sentiment_score": -0.7269,
+            "highlights": [
+              {
+                "highlight": "The Motley Fool has positions in and rec[+218 characters]",
+                "sentiment": -0.7269,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "NVDA",
+            "name": "NVIDIA Corporation",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "us",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 34.124847,
+            "sentiment_score": 0.187245,
+            "highlights": [
+              {
+                "highlight": "The revolution's poster child, <em>Nvidi[+343 characters]",
+                "sentiment": 0.8319,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "Nvidia's AI Summit is a big day for the [+129 characters]",
+                "sentiment": 0,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "The summit will be a chance for <em>Nvid[+170 characters]",
+                "sentiment": 0.765,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "<em>Nvidia</em> assured that shipments w[+184 characters]",
+                "sentiment": -0.7278,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "There was relative parity between <em>Nv[+144 characters]",
+                "sentiment": 0.4902,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "The difference right now is stark, but r[+326 characters]",
+                "sentiment": 0.8126,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "How is the market valuing <em>Nvidia</em[+314 characters]",
+                "sentiment": 0.3759,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "<em>Nvidia</em> has plenty of room to de[+269 characters]",
+                "sentiment": -0.1814,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "I believe <em>Nvidia</em> will continue [+323 characters]",
+                "sentiment": 0.3182,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "The Motley Fool has positions in and rec[+209 characters]",
+                "sentiment": -0.6249,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "3 Reasons to Buy <em>Nvidia</em> Stock Before October 7",
+                "sentiment": 0,
+                "highlighted_in": "title"
+              }
+            ]
+          }
+        ],
+        "similar": []
+      },
+      {
+        "uuid": "1765fe5d-0451-4518-9140-1f837f957b06",
+        "title": "Vanguard Group Inc's Strategic Acquisition of HashiCorp Inc Shares",
+        "description": "On September 30, 2024, Vanguard Group Inc made a significant addition to its investment portfolio by acquiring 726,271 shares of HashiCorp Inc (HCP), a prominen",
+        "keywords": "GuruFocus, Article, News, GuruFocus News, HCP, AAPL, AMZN, META, MSFT, NVDA",
+        "snippet": "On September 30, 2024, Vanguard Group Inc made a significant addition to its investment portfolio by acquiring 726,271 shares of HashiCorp Inc (HCP, Financial),...",
+        "url": "https://www.gurufocus.com/news/2542836/vanguard-group-incs-strategic-acquisition-of-hashicorp-inc-shares",
+        "image_url": "https://s3.amazonaws.com/gurufocus_userupload/1842295414913658880.png",
+        "language": "en",
+        "published_at": "2024-10-04T21:07:11.000000Z",
+        "source": "gurufocus.com",
+        "relevance_score": null,
+        "entities": [
+          {
+            "symbol": "AAPL",
+            "name": "Apple Inc.",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "us",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 10.620784,
+            "sentiment_score": 0.6249,
+            "highlights": [
+              {
+                "highlight": "The firm's expansive portfolio includes [+192 characters]",
+                "sentiment": 0.6249,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "MSFT.MI",
+            "name": "MICROSOFT CORP",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "it",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 12.187357,
+            "sentiment_score": 0.6249,
+            "highlights": [
+              {
+                "highlight": "The firm's expansive portfolio includes [+192 characters]",
+                "sentiment": 0.6249,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "AAPL.BA",
+            "name": "Apple Inc.",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "ar",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 10.62063,
+            "sentiment_score": 0.6249,
+            "highlights": [
+              {
+                "highlight": "The firm's expansive portfolio includes [+192 characters]",
+                "sentiment": 0.6249,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "MSFTD.BA",
+            "name": "MICROSOFT CORP",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "ar",
+            "type": "equity",
+            "industry": "N/A",
+            "match_score": 12.187395,
+            "sentiment_score": 0.6249,
+            "highlights": [
+              {
+                "highlight": "The firm's expansive portfolio includes [+192 characters]",
+                "sentiment": 0.6249,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "AAPLD.BA",
+            "name": "APPLE INC",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "ar",
+            "type": "equity",
+            "industry": "N/A",
+            "match_score": 10.620636,
+            "sentiment_score": 0.6249,
+            "highlights": [
+              {
+                "highlight": "The firm's expansive portfolio includes [+192 characters]",
+                "sentiment": 0.6249,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "MSFTB.BA",
+            "name": "MICROSOFT CORP",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "ar",
+            "type": "equity",
+            "industry": "N/A",
+            "match_score": 12.187395,
+            "sentiment_score": 0.6249,
+            "highlights": [
+              {
+                "highlight": "The firm's expansive portfolio includes [+192 characters]",
+                "sentiment": 0.6249,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "MSFTC.BA",
+            "name": "MICROSOFT CORP",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "ar",
+            "type": "equity",
+            "industry": "N/A",
+            "match_score": 12.187395,
+            "sentiment_score": 0.6249,
+            "highlights": [
+              {
+                "highlight": "The firm's expansive portfolio includes [+192 characters]",
+                "sentiment": 0.6249,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "AAPLC.BA",
+            "name": "APPLE INC",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "ar",
+            "type": "equity",
+            "industry": "N/A",
+            "match_score": 10.620636,
+            "sentiment_score": 0.6249,
+            "highlights": [
+              {
+                "highlight": "The firm's expansive portfolio includes [+192 characters]",
+                "sentiment": 0.6249,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "AAPLCL.SN",
+            "name": "APPLE INC",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "cl",
+            "type": "equity",
+            "industry": "N/A",
+            "match_score": 10.620518,
+            "sentiment_score": 0.6249,
+            "highlights": [
+              {
+                "highlight": "The firm's expansive portfolio includes [+192 characters]",
+                "sentiment": 0.6249,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "MSFTCL.SN",
+            "name": "MICROSOFT CORP",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "cl",
+            "type": "equity",
+            "industry": "N/A",
+            "match_score": 12.187218,
+            "sentiment_score": 0.6249,
+            "highlights": [
+              {
+                "highlight": "The firm's expansive portfolio includes [+192 characters]",
+                "sentiment": 0.6249,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "AAPL.SN",
+            "name": "Apple Inc.",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "cl",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 10.620518,
+            "sentiment_score": 0.6249,
+            "highlights": [
+              {
+                "highlight": "The firm's expansive portfolio includes [+192 characters]",
+                "sentiment": 0.6249,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "AAPL.NE",
+            "name": "Apple Inc.",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "ca",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 10.620358,
+            "sentiment_score": 0.6249,
+            "highlights": [
+              {
+                "highlight": "The firm's expansive portfolio includes [+192 characters]",
+                "sentiment": 0.6249,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "APC.DE",
+            "name": "Apple Inc.",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "de",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 10.621758,
+            "sentiment_score": 0.6249,
+            "highlights": [
+              {
+                "highlight": "The firm's expansive portfolio includes [+192 characters]",
+                "sentiment": 0.6249,
+                "highlighted_in": "main_text"
+              }
+            ]
+          },
+          {
+            "symbol": "AAPL.MX",
+            "name": "Apple Inc.",
+            "exchange": null,
+            "exchange_long": null,
+            "country": "mx",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 10.621779,
+            "sentiment_score": 0.6249,
+            "highlights": [
+              {
+                "highlight": "The firm's expansive portfolio includes [+192 characters]",
+                "sentiment": 0.6249,
+                "highlighted_in": "main_text"
+              }
+            ]
+          }
+        ],
+        "similar": []
+      }
+    ]
+  }
