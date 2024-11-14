@@ -1,0 +1,7 @@
+news_id,source_ticker,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
+,IBM,2023-02-04 22:00:43,IBM,0.74841,-0.067654,Neutral
+,IBM,2023-02-03 21:00:00,GWH,0.051774,0.023809,Neutral
+,IBM,2023-02-03 21:00:00,FATE,0.068995,0.024058,Neutral
+,IBM,2023-02-03 21:00:00,IBM,0.303175,-0.098298,Neutral
+,IBM,2023-02-03 21:00:00,BVS,0.270898,-0.044887,Neutral
+,IBM,2023-02-03 21:00:00,JNJ,0.017269,0.017436,Neutral
