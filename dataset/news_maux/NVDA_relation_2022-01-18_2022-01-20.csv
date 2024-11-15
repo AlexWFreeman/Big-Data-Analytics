@@ -1,0 +1,8 @@
+news_id,source_ticker,sentiment_score,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
+dfba0059-321a-4405-acae-fa2d73f559da,AAPL,,2022-01-19 17:34:55,,12.978977,,
+dfba0059-321a-4405-acae-fa2d73f559da,NVDA,,2022-01-19 17:34:55,,15.855947,,
+dfba0059-321a-4405-acae-fa2d73f559da,NFLX,,2022-01-19 17:34:55,,14.076139,,
+f09ccc56-20b0-46a3-837c-aa3159e3cd7d,NVDA,0.6908,2022-01-19 16:36:48,,34.89722,,
+f09ccc56-20b0-46a3-837c-aa3159e3cd7d,TSLA,0.6908,2022-01-19 16:36:48,,34.2154,,
+cda7b466-8916-4967-a769-9311ab178ba4,NVDA,0.6908,2022-01-19 16:29:38,,37.3817,,
+cda7b466-8916-4967-a769-9311ab178ba4,TSLA,0.6908,2022-01-19 16:29:38,,36.676483,,

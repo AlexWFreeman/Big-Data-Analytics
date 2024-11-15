@@ -1,0 +1,8 @@
+news_id,source_ticker,sentiment_score,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
+951a92a5-fc6c-4422-bafb-5b541f43b198,INTC,,2022-01-16 14:14:58,,4.669626,,
+951a92a5-fc6c-4422-bafb-5b541f43b198,INL.DE,,2022-01-16 14:14:58,,4.669722,,
+951a92a5-fc6c-4422-bafb-5b541f43b198,^FCHI,,2022-01-16 14:14:58,,8.174244,,
+951a92a5-fc6c-4422-bafb-5b541f43b198,ALMGI.PA,,2022-01-16 14:14:58,,19.297655,,
+951a92a5-fc6c-4422-bafb-5b541f43b198,INTC.MX,,2022-01-16 14:14:58,,4.669762,,
+951a92a5-fc6c-4422-bafb-5b541f43b198,INCO.BR,,2022-01-16 14:14:58,,6.630446,,
+951a92a5-fc6c-4422-bafb-5b541f43b198,INTC.SN,,2022-01-16 14:14:58,,6.629951,,
