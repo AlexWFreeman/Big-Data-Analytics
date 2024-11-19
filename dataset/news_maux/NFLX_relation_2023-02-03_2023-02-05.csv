@@ -1,0 +1,4 @@
+news_id,source_ticker,sentiment_score,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
+83d8a4db-7c3f-408b-a45d-71fea527671c,NFLX,0.7184,2023-02-04 10:30:58,,13.164402,,
+2700b3d5-2a3e-4f1d-a9e5-4a1b411a1019,NFLX,,2023-02-04 10:00:00,,29.926367,,
+89f97314-5ce0-4776-ac30-f3daae0b582c,NFLX,-0.043718,2023-02-04 05:23:16,,61.842613,,

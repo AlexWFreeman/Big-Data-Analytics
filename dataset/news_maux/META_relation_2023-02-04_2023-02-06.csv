@@ -1,0 +1,4 @@
+news_id,source_ticker,sentiment_score,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
+da637f53-e4d7-4f28-89bd-5f1b65315d02,META,0.4019,2023-02-05 15:33:20,,21.336903,,
+1cffe550-f446-412d-85dd-4f153468c477,META,0.0,2023-02-05 14:16:00,,20.2843,,
+0ca298cc-af5b-40d1-83be-3aa04444721e,META,0.0,2023-02-05 14:16:00,,20.2843,,
