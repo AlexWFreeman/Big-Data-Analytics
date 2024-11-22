@@ -1,0 +1,7 @@
+news_id,source_ticker,sentiment_score,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
+087db4fa-2963-4a6b-beff-3dc70cc25c48,GOOGL,,2023-02-21 18:43:38,GOOGL,12.851408,,
+7fe5516c-e1a6-4db0-9c7d-4a713edd1dbe,GOOG,-0.7758,2023-02-21 18:05:00,GOOG,28.705593,,
+7fe5516c-e1a6-4db0-9c7d-4a713edd1dbe,GOOG,-0.3879,2023-02-21 18:05:00,GOOGL,74.444565,,
+541b604e-5b3c-411c-ac01-8e337044f1da,AAPL,,2023-02-21 18:03:29,AAPL,10.226077,,
+541b604e-5b3c-411c-ac01-8e337044f1da,AAPL,,2023-02-21 18:03:29,GOOGL,12.306258,,
+541b604e-5b3c-411c-ac01-8e337044f1da,AAPL,,2023-02-21 18:03:29,MSFT,10.703041,,
