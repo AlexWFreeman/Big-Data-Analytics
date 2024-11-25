@@ -1,0 +1,6 @@
+news_id,source_ticker,sentiment_score,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
+be506792-c9d2-4977-9b8b-ae6151ebfd0f,META,-0.25,2023-03-10 18:29:00,META,19.823633,,
+5dd2c162-aa51-4825-8754-0a1b9fbbf7e5,META,-0.296,2023-03-10 18:21:00,META,14.290078,,
+5dd2c162-aa51-4825-8754-0a1b9fbbf7e5,META,0.17995,2023-03-10 18:21:00,CGNTV,150.0468,,
+5dd2c162-aa51-4825-8754-0a1b9fbbf7e5,META,0.17995,2023-03-10 18:21:00,CGNT,162.60352,,
+c7c20c6e-7d03-4b62-839f-471e079abf85,META,-0.4019,2023-03-10 17:52:00,META,19.241215,,
