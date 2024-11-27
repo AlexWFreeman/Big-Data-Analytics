@@ -1,6 +1,6 @@
 news_id,source_ticker,sentiment_score,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
-56a7b73e-6f9f-45ef-a02f-68cf2aa4bddd,IBM,0.4767,2024-09-06 09:00:17,,165.61273,,
-56a7b73e-6f9f-45ef-a02f-68cf2aa4bddd,IBM.DE,0.4767,2024-09-06 09:00:17,,136.272,,
-56a7b73e-6f9f-45ef-a02f-68cf2aa4bddd,IBM.MX,0.4767,2024-09-06 09:00:17,,136.27057,,
-56a7b73e-6f9f-45ef-a02f-68cf2aa4bddd,IBM.L,0.4767,2024-09-06 09:00:17,,136.27025,,
-56a7b73e-6f9f-45ef-a02f-68cf2aa4bddd,IBMB34.SA,0.4767,2024-09-06 09:00:17,,136.27151,,
+56a7b73e-6f9f-45ef-a02f-68cf2aa4bddd,IBM,0.4767,2024-09-06 09:00:17,IBM,165.61273,,
+56a7b73e-6f9f-45ef-a02f-68cf2aa4bddd,IBM,0.4767,2024-09-06 09:00:17,IBM.DE,136.272,,
+56a7b73e-6f9f-45ef-a02f-68cf2aa4bddd,IBM,0.4767,2024-09-06 09:00:17,IBM.MX,136.27057,,
+56a7b73e-6f9f-45ef-a02f-68cf2aa4bddd,IBM,0.4767,2024-09-06 09:00:17,IBM.L,136.27025,,
+56a7b73e-6f9f-45ef-a02f-68cf2aa4bddd,IBM,0.4767,2024-09-06 09:00:17,IBMB34.SA,136.27151,,

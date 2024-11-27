@@ -1,0 +1,4 @@
+news_id,source_ticker,sentiment_score,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
+d7527a77-a27a-4a82-9379-d22dba8119e1,ORCL,0.0516,2023-02-07 18:20:08,ORCL,17.483746,,
+a780eb05-764a-4402-925c-6f70371c008a,ORCL,0.505082,2023-02-07 14:11:04,ORCL,40.303734,,
+6cc8f9d7-acfb-4607-a41a-32edc0fe945f,ORCL,0.519491,2023-02-07 14:10:00,ORCL,40.303734,,

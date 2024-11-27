@@ -1,0 +1,3 @@
+news_id,source_ticker,sentiment_score,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
+272b73b1-823e-48f7-a0b8-80c3ba1718d0,TSLA,0,2023-03-12 08:11:00,TSLA,37.218746,,
+272b73b1-823e-48f7-a0b8-80c3ba1718d0,TSLA,0,2023-03-12 08:11:00,NFLX,36.68885,,

@@ -1,0 +1,5 @@
+news_id,source_ticker,sentiment_score,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
+a0e93c73-22c9-4e52-8bcf-c2cb671e540a,ORCL,-0.4019,2023-02-04 00:16:45,ORCL.MX,5.58165,,
+a0e93c73-22c9-4e52-8bcf-c2cb671e540a,ORCL,0.312764,2023-02-04 00:16:45,ORCL,77.16501,,
+a0e93c73-22c9-4e52-8bcf-c2cb671e540a,ORCL,-0.4019,2023-02-04 00:16:45,ORCL.BA,5.581888,,
+a0e93c73-22c9-4e52-8bcf-c2cb671e540a,ORCL,-0.4019,2023-02-04 00:16:45,ORC.DE,5.582048,,

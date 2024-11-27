@@ -1,0 +1,6 @@
+news_id,source_ticker,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
+,IBM,2023-03-03 10:48:05,MSFT,0.090816,0.167637,Somewhat-Bullish
+,IBM,2023-03-03 10:48:05,PATH,0.378903,0.242699,Somewhat-Bullish
+,IBM,2023-03-03 10:48:05,IBM,0.553018,0.318619,Somewhat-Bullish
+,IBM,2023-03-03 09:45:00,IBM,0.042723,0.196108,Somewhat-Bullish
+,IBM,2023-03-03 09:45:00,DELL,0.042723,0.196108,Somewhat-Bullish

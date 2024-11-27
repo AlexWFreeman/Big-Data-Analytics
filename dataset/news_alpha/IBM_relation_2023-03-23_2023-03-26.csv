@@ -1,0 +1,10 @@
+news_id,source_ticker,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
+,IBM,2023-03-25 08:30:00,T,0.108466,0.056957,Neutral
+,IBM,2023-03-25 08:30:00,VZ,0.266828,0.297305,Somewhat-Bullish
+,IBM,2023-03-25 08:30:00,IBM,0.162073,-0.011079,Neutral
+,IBM,2023-03-24 12:43:00,AIU,0.0203,0.03106,Neutral
+,IBM,2023-03-24 12:43:00,DTST,0.0203,0.03106,Neutral
+,IBM,2023-03-24 12:43:00,IBM,0.08107,0.176652,Somewhat-Bullish
+,IBM,2023-03-24 06:00:00,IBM,0.033942,0.0,Neutral
+,IBM,2023-03-24 06:00:00,DBD,0.033942,0.0,Neutral
+,IBM,2023-03-24 06:00:00,SMAWF,0.033942,0.0,Neutral

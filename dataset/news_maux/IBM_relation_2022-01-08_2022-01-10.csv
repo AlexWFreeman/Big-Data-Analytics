@@ -1,2 +1,2 @@
 news_id,source_ticker,sentiment_score,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
-083e401e-c6b5-4ee3-a36e-8eff583c0513,IBM,0.191767,2022-01-09 10:00:00,,13.74931,,
+083e401e-c6b5-4ee3-a36e-8eff583c0513,IBM,0.191767,2022-01-09 10:00:00,IBM,13.74931,,
