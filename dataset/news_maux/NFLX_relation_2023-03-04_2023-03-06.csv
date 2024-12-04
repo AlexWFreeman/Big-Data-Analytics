@@ -1,3 +1,0 @@
-news_id,source_ticker,sentiment_score,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
-9c11500d-c185-4404-8ed1-d5c9e03da19a,NFLX,-0.34,2023-03-05 15:21:00,NFLX,12.907461,,
-53689a45-32ba-45d6-9907-280d58603ebf,NFLX,,2023-03-05 13:50:13,NFLX,12.938026,,

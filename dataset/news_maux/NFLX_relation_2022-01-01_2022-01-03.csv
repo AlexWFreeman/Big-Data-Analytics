@@ -1,6 +1,0 @@
-news_id,source_ticker,sentiment_score,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
-6d7dd74b-fef8-4f3a-82fb-2c8280910f25,NFLX,-0.1977,2022-01-02 17:29:32,AAPL,10.079058,,
-6d7dd74b-fef8-4f3a-82fb-2c8280910f25,NFLX,-0.3182,2022-01-02 17:29:32,NVDA,9.148369,,
-6d7dd74b-fef8-4f3a-82fb-2c8280910f25,NFLX,-0.3182,2022-01-02 17:29:32,MSFT,8.192266,,
-6d7dd74b-fef8-4f3a-82fb-2c8280910f25,NFLX,-0.2501,2022-01-02 17:29:32,TSLA,13.799465,,
-6d7dd74b-fef8-4f3a-82fb-2c8280910f25,NFLX,-0.3182,2022-01-02 17:29:32,NFLX,8.363157,,

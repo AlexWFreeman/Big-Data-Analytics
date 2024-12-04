@@ -1,8 +1,0 @@
-news_id,source_ticker,sentiment_score,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
-b0b61ee2-f543-4f97-a7ee-80abe66c75ec,META,-0.4404,2022-01-13 08:29:00,AAPL,9.328431,,
-b0b61ee2-f543-4f97-a7ee-80abe66c75ec,META,0.156282,2022-01-13 08:29:00,SNAP,32.578056,,
-b0b61ee2-f543-4f97-a7ee-80abe66c75ec,META,-0.34,2022-01-13 08:29:00,PSJ,27.488464,,
-b0b61ee2-f543-4f97-a7ee-80abe66c75ec,META,0.4019,2022-01-13 08:29:00,VPOP,40.100067,,
-b0b61ee2-f543-4f97-a7ee-80abe66c75ec,META,0.0258,2022-01-13 08:29:00,META,36.781574,,
-b0b61ee2-f543-4f97-a7ee-80abe66c75ec,META,-0.34,2022-01-13 08:29:00,^PSJ-IV,27.487457,,
-b0b61ee2-f543-4f97-a7ee-80abe66c75ec,META,-0.34,2022-01-13 08:29:00,^PSJ-TC,27.487457,,

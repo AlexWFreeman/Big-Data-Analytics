@@ -1,7 +1,0 @@
-news_id,source_ticker,sentiment_score,time,ticker,relevance_score,ticker_sentiment_score,ticker_sentiment_label
-d36ece33-4dd9-42aa-a32f-28f4bcdcf606,META,0.27985,2022-01-12 16:05:44,BITC-U.TO,30.614658,,
-d36ece33-4dd9-42aa-a32f-28f4bcdcf606,META,0.1779,2022-01-12 16:05:44,META,66.30061,,
-bda12d7a-c8c4-40d0-acd9-7c812e54769d,META,0.5859,2022-01-12 06:06:25,ATZ.TO,26.031055,,
-bda12d7a-c8c4-40d0-acd9-7c812e54769d,META,0.5859,2022-01-12 06:06:25,KBH,19.364223,,
-bda12d7a-c8c4-40d0-acd9-7c812e54769d,META,0.5859,2022-01-12 06:06:25,ATZAF,25.913284,,
-bda12d7a-c8c4-40d0-acd9-7c812e54769d,META,-0.4404,2022-01-12 06:06:25,META,55.602226,,
