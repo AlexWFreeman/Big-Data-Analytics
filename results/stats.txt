@@ -1,0 +1,25 @@
+Ticker: AAPL
+Always hold stock: (Sharpe)1.37, (Yield)36.57%
+Long-short term strategy: (Sharpe)0.58, (Yield)13.31%
+Single stock (going long): (Sharpe)2.29, (Yield)48.96%
+Ticker: GOOGL
+Always hold stock: (Sharpe)1.21, (Yield)41.3%
+Long-short term strategy: (Sharpe)1.26, (Yield)42.92%
+Single stock (going long): (Sharpe)3.3, (Yield)82.46%
+Ticker: MSFT
+Always hold stock: (Sharpe)1.43, (Yield)39.14%
+Long-short term strategy: (Sharpe)1.43, (Yield)39.14%
+Single stock (going long): (Sharpe)2.25, (Yield)49.38%
+Ticker: AMZN
+Always hold stock: (Sharpe)1.31, (Yield)47.18%
+Long-short term strategy: (Sharpe)1.37, (Yield)46.73%
+Single stock (going long): (Sharpe)3.0, (Yield)97.39%
+Ticker: META
+Always hold stock: (Sharpe)2.18, (Yield)126.48%
+Long-short term strategy: (Sharpe)2.18, (Yield)126.48%
+Single stock (going long): (Sharpe)2.49, (Yield)128.03%
+Portfolio
+Fixed Portfolio (always hold): (Sharpe)1.97, (Yield)57.19%
+Fixed Portfolio (going long): (Sharpe)3.21, (Yield)77.8%
+Dynanmic Portfolio (going long): (Sharpe)2.89, (Yield)130.68%
+Dynanmic Portfolio (short selling): (Sharpe)3.7, (Yield)186.54%

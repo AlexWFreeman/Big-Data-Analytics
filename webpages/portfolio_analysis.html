@@ -1,0 +1,122 @@
+<!-- portfolio_analysis.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Analysis</title>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Analysis</h1>
+        <a href="index.html">Back to Homepage</a>
+    </header>
+    <main>
+        <div id="date-selector">
+            <h2>Select Date</h2>
+            <select id="dateDropdown"></select>
+        </div>
+        <div id="portfolio-pie">
+            <h2>Portfolio Distribution</h2>
+            <canvas id="pieChart"></canvas>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Function to load CSV data
+        async function loadCSVData() {
+    try {
+        // Fetch the file
+        const response = await fetch('portfolio.csv');
+        
+        // Check if the response is successful
+        if (!response.ok) {
+            throw new Error(`Failed to load file: ${response.statusText}`);
+        }
+
+        // Get the text content of the CSV file
+        const csvText = await response.text();
+        console.log("File content loaded:", csvText);  // Log the raw CSV content for verification
+
+        // Split the CSV content into rows and then into columns
+        const rows = csvText.trim().split('\n').map(row => row.split(','));
+        console.log("Parsed rows:", rows);  // Log the parsed rows to verify
+
+        // Extract headers from the first row
+        const headers = rows[0];
+        console.log("Headers:", headers);  // Log the headers to verify
+
+        // Map each row to an object using headers as keys
+        const data = rows.slice(1).map(row => {
+    const obj = {};
+    headers.forEach((header, index) => {
+        // Keep trade_date as a string to preserve the full date format
+        obj[header] = header === 'trade_date' ? row[index] : (row[index] !== '' ? parseFloat(row[index]) || row[index] : null);
+    });
+    return obj;
+});
+
+        console.log("Parsed data:", data);  // Log the parsed data to verify
+
+        return data;  // Return the data array
+
+    } catch (error) {
+        console.error("Error loading CSV file:", error);  // Log any errors that occur
+    }
+}
+
+        // Populate the dropdown and initialize the chart
+        async function initialize() {
+            const data = await loadCSVData();
+
+            // Populate dropdown with dates
+            const dateDropdown = document.getElementById('dateDropdown');
+            data.forEach(row => {
+                const option = document.createElement('option');
+                option.value = row.trade_date;
+                option.textContent = row.trade_date;
+                dateDropdown.appendChild(option);
+            });
+
+            // Initialize chart
+            const chartContext = document.getElementById('pieChart').getContext('2d');
+            const pieChart = new Chart(chartContext, {
+                type: 'pie',
+                data: {
+                    labels: ['AAPL', 'GOOGL', 'MSFT', 'AMZN', 'META', 'Cash'],
+                    datasets: [{
+                        data: [],
+                        backgroundColor: ['red', 'blue', 'green', 'orange', 'purple', 'gray'],
+                    }],
+                },
+            });
+
+            // Update chart when date is selected
+            dateDropdown.addEventListener('change', (event) => {
+                const selectedDate = event.target.value;
+                const selectedRow = data.find(row => row.trade_date === selectedDate);
+
+                if (selectedRow) {
+                    const updatedData = [
+                        selectedRow.AAPL_ratio,
+                        selectedRow.GOOGL_ratio,
+                        selectedRow.MSFT_ratio,
+                        selectedRow.AMZN_ratio,
+                        selectedRow.META_ratio,
+                        selectedRow.cash_ratio
+                    ];
+
+                    pieChart.data.datasets[0].data = updatedData;
+                    pieChart.update();
+                }
+            });
+
+            // Trigger an initial selection
+            dateDropdown.dispatchEvent(new Event('change'));
+        }
+
+        // Load and initialize
+        initialize();
+    </script>
+</body>
+</html>

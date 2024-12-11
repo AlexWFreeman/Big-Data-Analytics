@@ -1,0 +1,97 @@
+<!-- price_yield_trend.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price & Yield Trend</title>
+</head>
+<body>
+    <header>
+        <h1>Price & Yield Trend</h1>
+        <a href="index.html">Back to Homepage</a>
+    </header>
+    <main>
+        <div id="stock-selector">
+            <h2>Select Stock</h2>
+            <select id="stockDropdown">
+                <option value="AAPL">AAPL</option>
+                <option value="AMZN">AMZN</option>
+                <option value="GOOGL">GOOGL</option>
+                <option value="META">META</option>
+                <option value="MSFT">MSFT</option>
+            </select>
+        </div>
+        <div id="trend-chart">
+            <h2>Trend Chart</h2>
+            <canvas id="lineChart"></canvas>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Function to load CSV data
+        async function loadCSV(stock) {
+            const response = await fetch(`single_stock/${stock}.csv`);
+            const csvText = await response.text();
+            const rows = csvText.trim().split('\n').map(row => row.split(','));
+            const headers = rows[0];
+            const data = rows.slice(1).map(row => {
+                const obj = {};
+                headers.forEach((header, index) => {
+                    obj[header] = row[index] !== '' ? parseFloat(row[index]) || row[index] : null;
+                });
+                return obj;
+            });
+            return data;
+        }
+
+        // Update chart with new data
+        async function updateChart(stock, chart) {
+            const data = await loadCSV(stock);
+
+            const labels = data.map(row => row.trade_date);
+            const prices = data.map(row => row.prices);
+            const yields = data.map(row => row.ratios);
+
+            chart.data.labels = labels;
+            chart.data.datasets[0].data = prices;
+            chart.data.datasets[1].data = yields;
+            chart.update();
+        }
+
+        // Initialize chart
+        const chartContext = document.getElementById('lineChart').getContext('2d');
+        const lineChart = new Chart(chartContext, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        label: 'Price',
+                        data: [],
+                        borderColor: 'blue',
+                        fill: false,
+                    },
+                    {
+                        label: 'Yield',
+                        data: [],
+                        borderColor: 'green',
+                        fill: false,
+                    }
+                ]
+            },
+        });
+
+        // Handle stock selection
+        const stockDropdown = document.getElementById('stockDropdown');
+        stockDropdown.addEventListener('change', (event) => {
+            const selectedStock = event.target.value;
+            updateChart(selectedStock, lineChart);
+        });
+
+        // Initial load for the first stock
+        updateChart(stockDropdown.value, lineChart);
+    </script>
+</body>
+</html>
+
