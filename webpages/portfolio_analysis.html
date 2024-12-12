@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Analysis</title>
+    
 </head>
 <body>
     <header>
@@ -18,7 +19,7 @@
         </div>
         <div id="portfolio-pie">
             <h2>Portfolio Distribution</h2>
-            <canvas id="pieChart"></canvas>
+            <canvas id="pieChart" width="550" height="550" ></canvas>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -48,13 +49,13 @@
 
         // Map each row to an object using headers as keys
         const data = rows.slice(1).map(row => {
-    const obj = {};
-    headers.forEach((header, index) => {
+        const obj = {};
+        headers.forEach((header, index) => {
         // Keep trade_date as a string to preserve the full date format
         obj[header] = header === 'trade_date' ? row[index] : (row[index] !== '' ? parseFloat(row[index]) || row[index] : null);
+        });
+        return obj;
     });
-    return obj;
-});
 
         console.log("Parsed data:", data);  // Log the parsed data to verify
 
@@ -89,6 +90,10 @@
                         backgroundColor: ['red', 'blue', 'green', 'orange', 'purple', 'gray'],
                     }],
                 },
+                options: {
+                    responsive: false,
+                    maintainAspectRatio: false,  // Allow resizing of the chart based on canvas size
+    }
             });
 
             // Update chart when date is selected

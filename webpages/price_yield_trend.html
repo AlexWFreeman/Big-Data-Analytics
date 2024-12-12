@@ -51,7 +51,7 @@
 
             const labels = data.map(row => row.trade_date);
             const prices = data.map(row => row.prices);
-            const yields = data.map(row => row.ratios);
+            const yields = data.map(row => row.capital);
 
             chart.data.labels = labels;
             chart.data.datasets[0].data = prices;
@@ -71,15 +71,44 @@
                         data: [],
                         borderColor: 'blue',
                         fill: false,
+                        yAxisID: 'y-axis-price',
                     },
                     {
                         label: 'Yield',
                         data: [],
                         borderColor: 'green',
                         fill: false,
+                        yAxisID: 'y-axis-yield',
                     }
                 ]
             },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    },
+                    'y-axis-price': {
+                        type: 'linear',
+                        position: 'left',
+                        title: {
+                            display: true,
+                            text: 'Price'
+                        }
+                    },
+                    'y-axis-yield': {
+                        type: 'linear',
+                        position: 'right',
+                        title: {
+                            display: true,
+                            text: 'Yield'
+                        },
+                        grid: {
+                            drawOnChartArea: false
+                        }
+                    }
+                }
+            }
         });
 
         // Handle stock selection

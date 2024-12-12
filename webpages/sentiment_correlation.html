@@ -45,6 +45,51 @@
             return data;
         }
 
+        // Function to calculate linear regression line
+        function calculateRegressionLine(data) {
+            console.log('Input Data for Regression:', data);
+
+            // Filter invalid data points
+            const filteredData = data.filter(point => 
+                typeof point.x === 'number' && typeof point.y === 'number' && !isNaN(point.x) && !isNaN(point.y)
+            );
+            console.log('Filtered Data:', filteredData);
+
+            if (filteredData.length === 0) {
+                console.error('Error: No valid data points available for regression.');
+                return [];
+            }
+
+            const n = filteredData.length;
+            const sumX = filteredData.reduce((sum, point) => sum + point.x, 0);
+            const sumY = filteredData.reduce((sum, point) => sum + point.y, 0);
+            const sumXY = filteredData.reduce((sum, point) => sum + point.x * point.y, 0);
+            const sumX2 = filteredData.reduce((sum, point) => sum + point.x * point.x, 0);
+
+            const denominator = n * sumX2 - sumX * sumX;
+            if (denominator === 0) {
+                console.error('Error: Division by zero in slope calculation.');
+                return [];
+            }
+
+            const slope = (n * sumXY - sumX * sumY) / denominator;
+            const intercept = (sumY - slope * sumX) / n;
+
+            console.log('Slope:', slope, 'Intercept:', intercept);
+
+            const minX = Math.min(...filteredData.map(point => point.x));
+            const maxX = Math.max(...filteredData.map(point => point.x));
+
+            const regressionLine = [
+                { x: minX, y: slope * minX + intercept },
+                { x: maxX, y: slope * maxX + intercept },
+            ];
+
+            console.log('Regression Line Data:', regressionLine);
+    return regressionLine;
+}
+
+
         // Populate chart with selected stock data
         async function updateChart(stock, chart) {
             const data = await loadCSVData(stock);
@@ -58,8 +103,26 @@
                 y: row.pred_delta
             }));
 
+            const regressionLine = calculateRegressionLine(scatterData);
+            
+
             chart.data.datasets[0].data = scatterData;
             chart.data.datasets[1].data = predDeltaData;
+            if (chart.data.datasets.find(dataset => dataset.label === 'Regression Line')) {
+                chart.data.datasets[2].data = regressionLine;
+            } else {
+                chart.data.datasets.push({
+                    label: 'Regression Line',
+                    data: regressionLine,
+                    borderColor: 'black',
+                    borderWidth: 4,
+                    type: 'line', // Ensure it's treated as a line chart
+                    pointRadius: 0, // Remove points for the line
+                    fill: false,    // Do not fill under the line
+                });
+            }
+            console.log('Chart Data:', chart.data.datasets);
+
             chart.update();
         }
 
@@ -100,3 +163,4 @@
     </script>
 </body>
 </html>
+
