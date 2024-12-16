@@ -10,4 +10,8 @@ performance as a whole. The picture below illustrates the pipeline of our system
 **Data Gathering:** We gather data mainly from polygon.io. website. `data_paser.ipynb` extracts stock price and news data from polygon and save 
 them into csv files under `dataset/stocks` and `dataset/news`, respectively. We also explored news data with sentiment and relation scores from 
 marketaux and alpha vatange (although we didn't use them in our final design). We extract and analyze these data in `data_pulling.ipynb` and 
-`mt-alpha_data_relevance.ipynb` and store the csv files in `dataset/news_maux` and `dataset/news_alpha`, respectively.
+`mt-alpha_data_relevance.ipynb` and store the csv files in `dataset/news_maux` and `dataset/news_alpha`, respectively. 
+We use utilities under `data_combine` to preprocess the raw data in `news_maux` and `news_alpha`.
+
+**Sentiment Analysis:** We use finBert to generate sentiment labels and scores from news titles, keywords, and descriptions (summaries).
+Our scripts to run finBERT and analyze the sentiments are stored under `sentiment`. Our sentiment dataset is `dataset/polygon_title_sentiment_3`.
