@@ -1,0 +1,166 @@
+<!-- sentiment_correlation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Correlation</title>
+</head>
+<body>
+    <header>
+        <h1>Sentiment & Delta Correlation</h1>
+        <a href="index.html">Back to Homepage</a>
+    </header>
+    <main>
+        <div id="stock-selector">
+            <h2>Select Stock</h2>
+            <select id="stockDropdown">
+                <option value="AAPL">AAPL</option>
+                <option value="AMZN">AMZN</option>
+                <option value="GOOGL">GOOGL</option>
+                <option value="META">META</option>
+                <option value="MSFT">MSFT</option>
+            </select>
+        </div>
+        <div id="correlation-chart">
+            <h2>Correlation Plot</h2>
+            <canvas id="scatterChart"></canvas>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Function to load CSV data for a specific stock
+        async function loadCSVData(stock) {
+            const response = await fetch(`single_stock/${stock}.csv`);
+            const csvText = await response.text();
+            const rows = csvText.trim().split('\n').map(row => row.split(','));
+            const headers = rows[0];
+            const data = rows.slice(1).map(row => {
+                const obj = {};
+                headers.forEach((header, index) => {
+                    obj[header] = row[index] !== '' ? parseFloat(row[index]) || row[index] : null;
+                });
+                return obj;
+            });
+            return data;
+        }
+
+        // Function to calculate linear regression line
+        function calculateRegressionLine(data) {
+            console.log('Input Data for Regression:', data);
+
+            // Filter invalid data points
+            const filteredData = data.filter(point => 
+                typeof point.x === 'number' && typeof point.y === 'number' && !isNaN(point.x) && !isNaN(point.y)
+            );
+            console.log('Filtered Data:', filteredData);
+
+            if (filteredData.length === 0) {
+                console.error('Error: No valid data points available for regression.');
+                return [];
+            }
+
+            const n = filteredData.length;
+            const sumX = filteredData.reduce((sum, point) => sum + point.x, 0);
+            const sumY = filteredData.reduce((sum, point) => sum + point.y, 0);
+            const sumXY = filteredData.reduce((sum, point) => sum + point.x * point.y, 0);
+            const sumX2 = filteredData.reduce((sum, point) => sum + point.x * point.x, 0);
+
+            const denominator = n * sumX2 - sumX * sumX;
+            if (denominator === 0) {
+                console.error('Error: Division by zero in slope calculation.');
+                return [];
+            }
+
+            const slope = (n * sumXY - sumX * sumY) / denominator;
+            const intercept = (sumY - slope * sumX) / n;
+
+            console.log('Slope:', slope, 'Intercept:', intercept);
+
+            const minX = Math.min(...filteredData.map(point => point.x));
+            const maxX = Math.max(...filteredData.map(point => point.x));
+
+            const regressionLine = [
+                { x: minX, y: slope * minX + intercept },
+                { x: maxX, y: slope * maxX + intercept },
+            ];
+
+            console.log('Regression Line Data:', regressionLine);
+    return regressionLine;
+}
+
+
+        // Populate chart with selected stock data
+        async function updateChart(stock, chart) {
+            const data = await loadCSVData(stock);
+            const scatterData = data.map(row => ({
+                x: row.all_score,
+                y: row.real_delta
+            }));
+
+            const predDeltaData = data.map(row => ({
+                x: row.all_score,
+                y: row.pred_delta
+            }));
+
+            const regressionLine = calculateRegressionLine(scatterData);
+            
+
+            chart.data.datasets[0].data = scatterData;
+            chart.data.datasets[1].data = predDeltaData;
+            if (chart.data.datasets.find(dataset => dataset.label === 'Regression Line')) {
+                chart.data.datasets[2].data = regressionLine;
+            } else {
+                chart.data.datasets.push({
+                    label: 'Regression Line',
+                    data: regressionLine,
+                    borderColor: 'black',
+                    borderWidth: 4,
+                    type: 'line', // Ensure it's treated as a line chart
+                    pointRadius: 0, // Remove points for the line
+                    fill: false,    // Do not fill under the line
+                });
+            }
+            console.log('Chart Data:', chart.data.datasets);
+
+            chart.update();
+        }
+
+        // Initialize dropdown and chart
+        async function initialize() {
+            const stockDropdown = document.getElementById('stockDropdown');
+            const chartContext = document.getElementById('scatterChart').getContext('2d');
+
+            const scatterChart = new Chart(chartContext, {
+                type: 'scatter',
+                data: {
+                    datasets: [
+                        {
+                            label: 'Sentiment vs Real Delta',
+                            data: [],
+                            backgroundColor: 'red',
+                        },
+                        {
+                            label: 'Sentiment vs Pred Delta',
+                            data: [],
+                            backgroundColor: 'blue',
+                        }
+                    ]
+                },
+            });
+
+            stockDropdown.addEventListener('change', async (event) => {
+                const selectedStock = event.target.value;
+                await updateChart(selectedStock, scatterChart);
+            });
+
+            // Trigger initial chart update for the first stock
+            await updateChart(stockDropdown.value, scatterChart);
+        }
+
+        // Initialize on load
+        initialize();
+    </script>
+</body>
+</html>
+
